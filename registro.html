@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagenes/icon.png" />
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <title>Libreria Union</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerdaDe.html">Acerca de</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+
+        <h1>Libreria Union</h1>
+    </header>
+
+    <div>
+        <h2>Registrarse: </h2><br>
+        <div>
+            <form name="registroUsuario" method="post" action="show_data.html" target="_blank">
+                <label>Nombre: <input type="text" name="nombreUsuario" placeholder="Ingrese su nombre/s..."></label><br><br>
+                <label>Apellido: <input type="text" name="apellidoUsuario" placeholder="Ingrese su apellido/s..."></label><br><br>
+                <label>Direccion: <input type="text" name="direccionUsuario" placeholder="Ingrese su direccion..."></label><br><br>
+                <label>Ciudad: <input type="text" name="ciudadUsuario" placeholder="Ingrese su cuidad..."></label><br><br>
+                <label>Codigo Postal: <input type="text" name="cpUsuario" placeholder="Ingrese su codigo postal..." min="1000" max=9999></label><br><br>
+                <label>Fecha de Nacimiento: <input type="date" name="nacimientoUsuario" step="1" min="1920-01-01" max="2020-12-31" value="2020-01-01"></label><br><br>
+                <label>
+                    Genero: 
+                    <input type="radio" name="generoUsuario" value="hombre" checked="checked">Hombre 
+                    <input type="radio" name="generoUsuario" value="mujer">Mujer
+                    <input type="radio" name="generoUsuario" value="otro">Otro 
+                </label><br><br>
+                <label>
+                    Estudios:
+                    <input type="checkbox" name="primariosEstudios" value="primarios" checked>Primarios
+                    <input type="checkbox" name="secundariosEstudios" value="secundarios">Secundarios
+                    <input type="checkbox" name="terciariosEstudios" value="terciarios">Terciarios
+                    <input type="checkbox" name="universitariosEstudios" value="universitarios">Universitarios
+                    <input type="checkbox" name="otrosEstudios" value="otrosEstudios">Otros
+                </label><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <footer> 
+    <a href="https://www.twitter.com" target ="_blank">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+    </a> 
+    <a href="https://www.facebook.com" target="_blank">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+    </a> 
+    <a href="https://www.pinterest.com" target="_blank">
+        <i class="fa fa-pinterest" aria-hidden="true"></i>
+    </a> 
+    <a href="https://www.instagram.com" target="_blank">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a> 
+    <a href="https://www.linkedin.com" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </a>
+    <br>
+        Derechos Reservados @2020
+    </footer>
+    
+</body>
+</html>
