@@ -27,12 +27,13 @@
         <h2>Registrarse: </h2><br>
         <div>
             <form name="registroUsuario" method="post" action="show_data.html" target="_blank">
-                <label>Nombre: <input type="text" name="nombreUsuario" placeholder="Ingrese su nombre/s..."></label><br><br>
-                <label>Apellido: <input type="text" name="apellidoUsuario" placeholder="Ingrese su apellido/s..."></label><br><br>
-                <label>Direccion: <input type="text" name="direccionUsuario" placeholder="Ingrese su direccion..."></label><br><br>
-                <label>Ciudad: <input type="text" name="ciudadUsuario" placeholder="Ingrese su cuidad..."></label><br><br>
-                <label>Codigo Postal: <input type="text" name="cpUsuario" placeholder="Ingrese su codigo postal..." min="1000" max=9999></label><br><br>
-                <label>Fecha de Nacimiento: <input type="date" name="nacimientoUsuario" step="1" min="1920-01-01" max="2020-12-31" value="2020-01-01"></label><br><br>
+                <label>Nombre: <input type="text" name="nombreUsuario" required placeholder="Ingrese su nombre/s..."></label><br><br>
+                <label>Apellido: <input type="text" name="apellidoUsuario" required placeholder="Ingrese su apellido/s..."></label><br><br>
+                 <label>Email: <input type="email" name="emailUsuario" required placeholder="nombre@direccion.com"></label><br><br>
+                 <label>Direccion: <input type="text" name="direccionUsuario" required placeholder="Ingrese su direccion..."></label><br><br>
+                <label>Ciudad: <input type="text" name="ciudadUsuario" required placeholder="Ingrese su cuidad..."></label><br><br>
+                <label>Codigo Postal: <input type="text" name="cpUsuario" required placeholder="Ingrese su codigo postal..." min="1000" max=9999></label><br><br>
+                <label>Fecha de Nacimiento: <input type="date" name="nacimientoUsuario" requiered step="1" min="1920-01-01" max="2020-12-31" value="2020-01-01"></label><br><br>
                 <label>
                     Genero: 
                     <input type="radio" name="generoUsuario" value="hombre" checked="checked">Hombre 
