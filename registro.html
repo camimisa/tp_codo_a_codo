@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="imagenes/icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
     <title>Libreria Union</title>
 </head>
 <body>
     <header>
+        <br>
+        <h1>Libreria Union</h1>
+        <br>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,15 +22,14 @@
                 <li><a href="sucursales.html">Sucursales</a></li>
                 <li><a href="registro.html">Registrarse</a></li>
             </ul>
-        </nav>
-
-        <h1>Libreria Union</h1>
+        </nav> 
     </header>
-
-    <div>
-        <h2>Registrarse: </h2><br>
         <div>
             <form name="registroUsuario" method="post" action="show_data.html" target="_blank">
+                <h2><i class="far fa-address-book"></i>
+                        Registrarse 
+                    <i class="far fa-address-book"></i>
+                </h2><br>
                 <label>Nombre: <input type="text" name="nombreUsuario" required placeholder="Ingrese su nombre/s..."></label><br><br>
                 <label>Apellido: <input type="text" name="apellidoUsuario" required placeholder="Ingrese su apellido/s..."></label><br><br>
                  <label>Email: <input type="email" name="emailUsuario" required placeholder="nombre@direccion.com"></label><br><br>
@@ -44,33 +47,29 @@
                     Estudios:
                     <input type="checkbox" name="primariosEstudios" value="primarios" checked>Primarios
                     <input type="checkbox" name="secundariosEstudios" value="secundarios">Secundarios
+                    <br><br>
                     <input type="checkbox" name="terciariosEstudios" value="terciarios">Terciarios
                     <input type="checkbox" name="universitariosEstudios" value="universitarios">Universitarios
                     <input type="checkbox" name="otrosEstudios" value="otrosEstudios">Otros
                 </label><br><br>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" style="width:100px; height: 35px;">
+                <br> <br>
             </form>
         </div>
-    </div>
-
-    <footer> 
-    <a href="https://www.twitter.com" target ="_blank">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-    </a> 
-    <a href="https://www.facebook.com" target="_blank">
-      <i class="fa fa-facebook" aria-hidden="true"></i>
-    </a> 
-    <a href="https://www.pinterest.com" target="_blank">
-        <i class="fa fa-pinterest" aria-hidden="true"></i>
-    </a> 
-    <a href="https://www.instagram.com" target="_blank">
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-    </a> 
-    <a href="https://www.linkedin.com" target="_blank">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-    </a>
-    <br>
-        Derechos Reservados @2020
+    <footer>  
+        <div class="iconos">
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a> 
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fab fa-linkedin fa-lg"></i>
+            </a>            
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f fa-lg"></i>
+            </a> 
+        </div>
+        <br>
+        <p>Derechos Reservados @2020</p>
     </footer>
     
 </body>
