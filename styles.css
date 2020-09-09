@@ -1,61 +1,80 @@
 /*ESTILOS USADOS EN TODAS LAS PAGINAS*/
 * {
     padding: 0px;
-    margin: 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 html {
     min-height: 100%;
-    position: relative;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
     background-color:  #f8f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
 
 header {
     background-color:  #73c6b6 ;
     width: 100%;
+    margin-right: 0%;
+    max-height: 100px;
 }
 
 header nav {
     text-align: center;
     background-color: #d5d8dc ;
     padding: 5px;
-    
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.32);
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
 header nav li {
     display: inline;
-    padding: 4px;
+    padding: 4px;  
 }
 
-header nav li a {
+.botonBarraNav {
     color: #154360 ;
+    transition: background-color .4s;
+    text-decoration: none;
+}
+
+.botonBarraNav:hover {
+    color: black;
+    background-color: #abacad;
+    padding: 3px 1px 3px 1px;
+    border-radius: 3px;
 }
 
 h1 {
     text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.13);
 }
 
 h2 {
+    margin-top: 10px;
     padding:10px;
 }
 
 main {
     width: 100%;
-    margin: 20px;
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    min-height: 45vw;
 }
 
 footer {
+    align-self: flex-end;
     padding: 30px;
     background-color: #73c6b6 ;
     text-align: center;
-    position: absolute;
     bottom: 0;
+    right: 0;
     width: 100%;
 }
 
@@ -65,17 +84,46 @@ footer {
     color: black;
 }
 
+/*ESTILOS USADOS EN ACERDADE.HTML*/
+
+.imagenAcercaDe {
+    max-width: 80%;
+    height: auto;
+}
+
 /*ESTILOS USADOS EN LIBROUNO.HTML*/
 
 table, tr , td {
     border: black solid 1px;
 }
 
-/*SOLO USADO EN REGISTRO.HTML*/
-form {
-    border: black 1px dashed;
+table {
+    margin-left: 30%;
 }
 
+/*SOLO USADO EN REGISTRO.HTML*/
+
+form input {
+    border-radius: 2px;
+    padding: 3px;
+    margin: 2px;
+}
+
+form label , p{
+    font-size: 18px;
+}
+
+.botonFormulario {
+    height: 32px;
+    border-radius: 5px;
+    background-color:   #edf1f5;
+}
+
+.botonFormulario:hover {
+    background-color: #d9dce0 ;
+    cursor: pointer; 
+    cursor: hand;
+}
 
 
 

@@ -16,46 +16,45 @@
         <br>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="acerdaDe.html">Acerca de</a></li>
-                <li><a href="sucursales.html">Sucursales</a></li>
-                <li><a href="registro.html">Registrarse</a></li>
+                <li><a class="botonBarraNav" href="index.html">Home</a></li>
+                <li><a class="botonBarraNav" href="contacto.html">Contacto</a></li>
+                <li><a class="botonBarraNav" href="acerdaDe.html">Acerca de</a></li>
+                <li><a class="botonBarraNav" href="sucursales.html">Sucursales</a></li>
+                <li><a class="botonBarraNav" href="registro.html">Registrarse</a></li>
             </ul>
         </nav> 
     </header>
-        <main>
-            <form name="registroUsuario" method="post" action="show_data.html" target="_blank">
-                <h2><i class="far fa-address-book"></i>
-                        Registrarse 
-                    <i class="far fa-address-book"></i>
-                </h2><br>
-                <label>Nombre: <input type="text" name="nombreUsuario" required placeholder="Ingrese su nombre/s..."></label><br><br>
-                <label>Apellido: <input type="text" name="apellidoUsuario" required placeholder="Ingrese su apellido/s..."></label><br><br>
-                 <label>Email: <input type="email" name="emailUsuario" required placeholder="nombre@direccion.com"></label><br><br>
-                 <label>Direccion: <input type="text" name="direccionUsuario" required placeholder="Ingrese su direccion..."></label><br><br>
-                <label>Ciudad: <input type="text" name="ciudadUsuario" required placeholder="Ingrese su cuidad..."></label><br><br>
-                <label>Codigo Postal: <input type="text" name="cpUsuario" required placeholder="Ingrese su codigo postal..." min="1000" max=9999></label><br><br>
-                <label>Fecha de Nacimiento: <input type="date" name="nacimientoUsuario" requiered step="1" min="1920-01-01" max="2020-12-31" value="2020-01-01"></label><br><br>
-                <label>
-                    Genero: 
-                    <input type="radio" name="generoUsuario" value="hombre" checked="checked">Hombre 
-                    <input type="radio" name="generoUsuario" value="mujer">Mujer
-                    <input type="radio" name="generoUsuario" value="otro">Otro 
-                </label><br><br>
-                <label>
-                    Estudios:
-                    <input type="checkbox" name="primariosEstudios" value="primarios" checked>Primarios
-                    <input type="checkbox" name="secundariosEstudios" value="secundarios">Secundarios
-                    <br><br>
-                    <input type="checkbox" name="terciariosEstudios" value="terciarios">Terciarios
-                    <input type="checkbox" name="universitariosEstudios" value="universitarios">Universitarios
-                    <input type="checkbox" name="otrosEstudios" value="otrosEstudios">Otros
-                </label><br><br>
-                <input type="submit" value="Enviar" style="width:100px; height: 35px;">
-                <br> <br>
-            </form>
-        </main>
+    <main>
+        <form name="registroUsuario" method="post" action="show_data.html" target="_blank">
+            <h2><i class="far fa-address-book"></i>
+                    Registrarse 
+                <i class="far fa-address-book"></i>
+            </h2><br>
+            <label>Nombre: <input type="text" name="nombreUsuario" required placeholder="Ingrese su nombre/s..."></label><br><br>
+            <label>Apellido: <input type="text" name="apellidoUsuario" required placeholder="Ingrese su apellido/s..."></label><br><br>
+            <label>Email: <input type="email" name="emailUsuario" required placeholder="nombre@direccion.com"></label><br><br>
+            <label>Direccion: <input type="text" name="direccionUsuario" required placeholder="Ingrese su direccion..."></label><br><br>
+            <label>Ciudad: <input type="text" name="ciudadUsuario" required placeholder="Ingrese su cuidad..."></label><br><br>
+            <label>Codigo Postal: <input type="text" name="cpUsuario" required placeholder="Ingrese su codigo postal..." min="1000" max=9999></label><br><br>
+            <label>Fecha de Nacimiento: <input type="date" name="nacimientoUsuario" requiered step="1" min="1920-01-01" max="2020-12-31" value="2020-01-01"></label><br><br>
+            <label>
+                Genero: 
+                <input type="radio" name="generoUsuario" value="hombre" checked="checked"> Hombre 
+                <input type="radio" name="generoUsuario" value="mujer"> Mujer
+                <input type="radio" name="generoUsuario" value="otro"> Otro 
+            </label><br><br>
+            <p>
+                Estudios:
+                <input type="checkbox" name="primariosEstudios" value="primarios" checked> Primarios
+                <input type="checkbox" name="secundariosEstudios" value="secundarios"> Secundarios
+                <br><br>
+                <input type="checkbox" name="terciariosEstudios" value="terciarios"> Terciarios
+                <input type="checkbox" name="universitariosEstudios" value="universitarios"> Universitarios
+                <input type="checkbox" name="otrosEstudios" value="otrosEstudios"> Otros
+            </p><br><br>
+            <input class="botonFormulario" type="submit" value="Enviar" style="width:100px; height: 35px;">
+        </form>
+    </main>
     <footer>  
         <div class="iconos">
             <a href="https://www.instagram.com" target="_blank">
