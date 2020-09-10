@@ -30,6 +30,7 @@ header nav {
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.32);
     overflow: hidden;
     margin-bottom: 10px;
+    max-width: 100%;
 }
 
 header nav li {
@@ -84,21 +85,39 @@ footer {
     color: black;
 }
 
-/*ESTILOS USADOS EN ACERDADE.HTML*/
-
-.imagenAcercaDe {
+img {
     max-width: 80%;
     height: auto;
 }
 
+/* ESTILOS USADOS EN INDEX.HTML */
+
+.divLibros div{
+    display: inline-block;
+}
+
+.divLibros img {
+    width: 250px;
+    height: 300px;
+}
+
+/*ESTILOS USADOS EN ACERDADE.HTML*/
+
+
 /*ESTILOS USADOS EN LIBROUNO.HTML*/
+
+.descripcionLibro {
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 table, tr , td {
     border: black solid 1px;
 }
 
-table {
-    margin-left: 30%;
+.tablaLibro {
+    width: auto;
+    margin: 0 auto;
 }
 
 /*SOLO USADO EN REGISTRO.HTML*/
