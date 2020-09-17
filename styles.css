@@ -26,29 +26,47 @@ header {
 header nav {
     text-align: center;
     background-color: #d5d8dc ;
-    padding: 5px;
+    padding: 7px;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.32);
-    overflow: hidden;
     margin-bottom: 10px;
     max-width: 100%;
 }
 
-header nav li {
-    display: inline;
-    padding: 4px;  
+/*PANTALLAS GRANDES*/
+@media only screen and (min-width: 750px) {
+    header nav li {
+        display: inline;
+    }
+    .botonBarraNav:hover {
+        color: black;
+        background-color: #abacad;
+    }
+    header nav li {
+        margin: 5px 10px 5px 10px;
+    }
+}
+/*PANTALLAS PEQUEñAS*/
+@media only screen and (max-width: 750px) {
+
+    .botonBarraNav:hover {
+        color: #6A0888;
+    }
+    header {
+        max-height: 250px;
+    }
+    header nav ul {
+        list-style: none;
+    }
+    header nav li {
+        margin: 7px 0px 7px 0px;
+    }
 }
 
+/*VERIFICAR MENU, problema cuando la pagina es mas chica*/
 .botonBarraNav {
-    color: #154360 ;
-    transition: background-color .4s;
+    color: #154360;
+    transition: background-color .3s;
     text-decoration: none;
-}
-
-.botonBarraNav:hover {
-    color: black;
-    background-color: #abacad;
-    padding: 3px 1px 3px 1px;
-    border-radius: 3px;
 }
 
 h1 {
@@ -101,18 +119,34 @@ img {
     height: 300px;
 }
 
-/*ESTILOS USADOS EN ACERDADE.HTML*/
+/*ESTILOS USADOS EN NUESTROSLCIENTES.HTML*/
 
+.imagenesClientes img{
+    width: 200px;
+    height: 250px;
+    padding: 0 2% 3% 2%;
+}
+
+.imagenesClientes {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*ESTILOS USADOS EN LIBROUNO.HTML*/
 
 .descripcionLibro {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+table {
+    border-collapse: collapse;
 }
 
 table, tr , td {
     border: black solid 1px;
+    padding: 5px 7px 5px 7px;
 }
 
 .tablaLibro {
@@ -122,13 +156,23 @@ table, tr , td {
 
 /*SOLO USADO EN REGISTRO.HTML*/
 
+form {
+    background-color:  #bce4dc60 ;
+    border: dashed black 1px;
+    max-width: 370px;
+    align-items: center;
+    margin: 1% auto 0px auto;
+    padding-bottom: 1%;
+}
+
 form input {
     border-radius: 2px;
     padding: 3px;
     margin: 2px;
+
 }
 
-form label , p{
+form label , form p{
     font-size: 18px;
 }
 
@@ -144,5 +188,23 @@ form label , p{
     cursor: hand;
 }
 
+/*ESTILOS USADOS EN CONTACTO.HTML*/
 
+.imagenCursor{
+    width: 150px ;
+    height: 150px;
+    margin: auto;
+}
 
+.imagenCursor:hover{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+/*ESTILOS USADOS EN ACERCA DE*/
+.p_acercaDe{
+    width: 80%;
+    margin: 0px auto 0px auto;
+}
