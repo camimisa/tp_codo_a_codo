@@ -3,43 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagenes/icon.png" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imagenes/icon.png" /> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
-<body>
-    <header>
-        <br>
-        <h1>Libreria Union</h1>
-        <br>
-        <nav>
-            <ul>
-                <li><a class="botonBarraNav" href="index.html"> Home </a></li>
-                <li><a class="botonBarraNav" href="contacto.html"> Contacto </a></li>
-                <li><a class="botonBarraNav" href="acerdaDe.html"> Acerca de </a></li>
-                <li><a class="botonBarraNav" href="sucursales.html"> Sucursales </a></li>
-                <li><a class="botonBarraNav" href="registro.html"> Registrarse </a></li>
-                <li><a class="botonBarraNav" href="nuestrosClientes.html"> Nuestros clientes </a></li>
-            </ul>
-        </nav> 
-    </header>
-    <br>
-  
-    <main>  
-        <br>
-        <h2> Contacto
-        <i class="fas fa-envelope-open-text"></i>
-        </h2>
-        <br><br>
-        <p class="mandarEmail">Puedes comunicarte con nosotros <br> mandandonos un email a: <a href="mailto:contacto@info.com">contacto@info.com</a></p>
-        <br>
-        <img src="imagenes/cursor.png" alt="imagen de un cursor" class="imagenCursor">
-    </main>
+<body class="d-flex flex-column min-vh-100">
+    <div class="container-fluid">
+        <header class="header">
+            <h1><a href="index.html" style="text-decoration:none; color: black;">Libreria Union</a></h1>
+            <nav  class="navbar navbar-expand-lg navbar-light navbar-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="acerdaDe.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="registro.html">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="nuestrosClientes.html">Nuestros Clientes</a>
+                        </li>
+                    </ul> 
+                </nav> 
+        </header>         
+    </div>
 
-    <footer>  
-        <div class="iconos">
+    <div class="container">
+        <main>  
+            <br>
+            <h2> Contacto
+            <i class="fas fa-envelope-open-text"></i>
+            </h2>
+            <br><br>
+            <p class="mandarEmail">Puedes comunicarte con nosotros <br> mandandonos un email a: <a href="mailto:contacto@info.com">contacto@info.com</a></p>
+            <br>
+            <img src="imagenes/cursor.png" alt="imagen de un cursor" class="imagenCursor">
+        </main>
+    </div>
+
+    <footer class="mt-auto">  
+        <div class="container text-center iconos">
             <a href="https://www.instagram.com" target="_blank">
                 <i class="fab fa-instagram fa-lg"></i>
             </a> 
@@ -49,10 +68,13 @@
             <a href="https://www.facebook.com" target="_blank">
                 <i class="fab fa-facebook-f fa-lg"></i>
             </a> 
+            <br>
+            <p style="padding-top: 10px;">Derechos Reservados @2020</p>
         </div>
-        <br>
-        <p>Derechos Reservados @2020</p>
+        
     </footer>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

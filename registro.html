@@ -3,61 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="imagenes/icon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imagenes/icon.png" /> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
-    <title>Libreria Union</title>
+    <title>Registro</title>
 </head>
-<body>
-    <header>
-        <br>
-        <h1>Libreria Union</h1>
-        <br>
-        <nav>
-            <ul>
-                <li><a class="botonBarraNav" href="index.html"> Home </a></li>
-                <li><a class="botonBarraNav" href="contacto.html"> Contacto </a></li>
-                <li><a class="botonBarraNav" href="acerdaDe.html"> Acerca de </a></li>
-                <li><a class="botonBarraNav" href="sucursales.html"> Sucursales </a></li>
-                <li><a class="botonBarraNav" href="registro.html"> Registrarse </a></li>
-                <li><a class="botonBarraNav" href="nuestrosClientes.html"> Nuestros clientes </a></li>
-            </ul>
-        </nav> 
-    </header>
-    <main>
-        <form name="registroUsuario" method="post" netlify target="_blank">
-            <h2><i class="far fa-address-book"></i>
-                    Registrarse 
-                <i class="far fa-address-book"></i>
-            </h2><br>
-            <label>Nombre: <input type="text" name="nombreUsuario" required placeholder="Ingrese su nombre/s..."></label><br><br>
-            <label>Apellido: <input type="text" name="apellidoUsuario" required placeholder="Ingrese su apellido/s..."></label><br><br>
-            <label>Email: <input type="email" name="emailUsuario" required placeholder="nombre@direccion.com"></label><br><br>
-            <label>Direccion: <input type="text" name="direccionUsuario" required placeholder="Ingrese su direccion..."></label><br><br>
-            <label>Ciudad: <input type="text" name="ciudadUsuario" required placeholder="Ingrese su cuidad..."></label><br><br>
-            <label>Codigo Postal: <input type="text" name="cpUsuario" required placeholder="Ingrese su codigo postal..." min="1000" max=9999></label><br><br>
-            <label>Fecha de Nacimiento: <input type="date" name="nacimientoUsuario" requiered step="1" min="1920-01-01" max="2020-12-31" value="2020-01-01"></label><br><br>
-            <label>
-                Genero: <br>
-                <input type="radio" name="generoUsuario" value="hombre" checked="checked"> Hombre 
-                <input type="radio" name="generoUsuario" value="mujer"> Mujer
-                <input type="radio" name="generoUsuario" value="otro"> Otro 
-            </label><br><br>
-            <p>
-                Estudios:<br>
-                <input type="checkbox" name="primariosEstudios" value="primarios" checked> Primarios
-                <input type="checkbox" name="secundariosEstudios" value="secundarios"> Secundarios
+<body class="d-flex flex-column min-vh-100">
+    <div class="container-fluid">
+        <header class="header">
+            <h1><a href="index.html" style="text-decoration:none; color: black;">Libreria Union</a></h1>
+            <nav  class="navbar navbar-expand-lg navbar-light navbar-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="acerdaDe.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="registro.html">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link botonBarraNav" href="nuestrosClientes.html">Nuestros Clientes</a>
+                        </li>
+                    </ul> 
+                </nav> 
+        </header>         
+    </div>
+    <div class="container-fluid"></div>
+        <main>
+            <form name="registroUsuario" method="post" netlify target="_blank">
+                <h2 style="text-align: center;"><i class="far fa-address-book"></i>
+                        Registrarse 
+                    <i class="far fa-address-book"></i>
+                </h2><br>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-md-6 col-lg-4">
+                        <label>Nombre: 
+                            <input class="form-control" type="text" name="nombreUsuario" required placeholder="Ingrese su nombre/s...">
+                        </label>
+                    </div>
+                    <div class="form-group col-xs-12 col-md-6 col-lg-4">
+                        <label>Apellido: 
+                            <input class="form-control" type="text" name="apellidoUsuario" required placeholder="Ingrese su apellido/s...">
+                        </label>
+                    </div>
+                    <div class="form-group col-xs-12 col-md-6 col-lg-4">
+                        <label>Email: 
+                            <input class="form-control" type="email" name="emailUsuario" required placeholder="nombre@direccion.com">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-md-6 col-lg-4">
+                        <label>
+                            Direccion: <input class="form-control" type="text" name="direccionUsuario" required placeholder="Ingrese su direccion...">
+                        </label>
+                    </div>
+                    <div class="form-group col-xs-12 col-md-6 col-lg-4">
+                        <label>Ciudad: 
+                            <input class="form-control" type="text" name="ciudadUsuario" required placeholder="Ingrese su cuidad...">
+                        </label>
+                    </div>
+                    <div class="form-group col-xs-12 col-md-6 col-lg-4">
+                        <label>Codigo Postal: 
+                            <input class="form-control" type="number" name="cpUsuario" required placeholder="Ingrese su codigo postal..." min="1000" max=9999>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-md-6 col-lg-4">
+                        <label>Fecha de Nacimiento: 
+                            <input class="form-control" type="date" name="nacimientoUsuario" requiered step="1" min="1920-01-01" max="2020-12-31">
+                        </label>
+                    </div>
+                    <div class="genero col-xs-12 col-md-6 col-lg-4">
+                        Genero: <br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="generoUsuario" value="hombre" id="generoHombre" checked>
+                            <label class="form-check-label" for="generoHombre">
+                                Hombre
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="generoUsuario" value="mujer" id="generoMujer">
+                            <label class="form-check-label" for="generoMujer">
+                                Mujer
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="generoUsuario" value="otro" id="generoOtro">
+                            <label class="form-check-label" for="generoOtro">
+                                Otro
+                            </label>
+                        </div>  
+                                        
+                    </div>   
+                    <br>     
+                    <div class="estudios col-xs-12 col-md-6 col-lg-4">
+                        Estudios:
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="primariosEstudios" value="primarios" checked> 
+                            <label class="form-check-label">Primarios</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="secundariosEstudios" value="secundarios"> 
+                            <label class="form-check-label">Secundarios</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="terciariosEstudios" value="terciarios"> 
+                            <label class="form-check-label">Terciarios</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="universitariosEstudios" value="universitarios"> 
+                            <label class="form-check-label">Universitarios</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="otrosEstudios" value="otrosEstudios"> 
+                            <label class="form-check-label">Otros</label>
+                        </div>
+                    </div>
+                </div>
+
                 <br>
-                <input type="checkbox" name="terciariosEstudios" value="terciarios"> Terciarios
-                <input type="checkbox" name="universitariosEstudios" value="universitarios"> Universitarios
-                <input type="checkbox" name="otrosEstudios" value="otrosEstudios"> Otros
-            </p><br><br>
-            <input class="botonFormulario" type="submit" value="Enviar" style="width:100px; height: 35px;">
-        </form>
-    </main>
-    <footer>  
-        <div class="iconos">
+                <div class="row">
+                        <button class="btn btn-outline-secondary btn-lg" type="button" style="margin: auto;">Enviar</button>
+                </div>
+                
+            </form>
+       </main> 
+    </div>
+    
+    <footer class="mt-auto">  
+        <div class="container text-center iconos">
             <a href="https://www.instagram.com" target="_blank">
                 <i class="fab fa-instagram fa-lg"></i>
             </a> 
@@ -67,10 +158,13 @@
             <a href="https://www.facebook.com" target="_blank">
                 <i class="fab fa-facebook-f fa-lg"></i>
             </a> 
+            <br>
+            <p style="padding-top: 10px;">Derechos Reservados @2020</p>
         </div>
-        <br>
-        <p>Derechos Reservados @2020</p>
+        
     </footer>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
 </body>
 </html>
